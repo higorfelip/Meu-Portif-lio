@@ -1,0 +1,111 @@
+/* Defini uma fonte padrão do sistema e o scroll suave 
+   pra quando clicar no menu a página não dar aquele 'pulo' seco. */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    scroll-behavior: smooth; 
+    background-color: #f4f4f4;
+}
+
+/* Como o professor pediu, o menu tem que estar sempre visível. 
+   Usei 'position: fixed' pra ele ficar grudado no topo, mesmo 
+   quando eu rolar a página lá pra baixo. */
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 0;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Usei flexbox aqui pra alinhar o logo de um lado e os links do outro. */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Coloquei um destaque em vermelho no sobrenome pra dar um estilo. */
+.logo span { color: #e74c3c; }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s; /* Transição pro hover não ser imediato */
+}
+
+/* Efeito de cor quando passa o mouse por cima dos links. */
+nav ul li a:hover { color: #e74c3c; }
+
+/* Coloquei um padding de 120px no topo pra o texto não 
+   ficar escondido debaixo do menu fixo. */
+.section {
+    padding: 120px 20px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo pros cards de projetos, com uma borda lateral 
+   pra destacar o Cofrinho e o site de filmes. */
+.projeto-card {
+    border-left: 5px solid #e74c3c;
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Usei flex-direction column pros inputs ficarem um embaixo do outro. */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilização do botão de enviar. */
+button {
+    background: #e74c3c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background: #c0392b; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+}
