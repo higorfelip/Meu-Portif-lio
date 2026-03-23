@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Higor Felipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HIGOR <span>SOUZA</span></div>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="section">
+            <h1>Sobre Mim</h1>
+            <p>Olá! Meu nome é <strong>Higor Felipe Nascimento Souza</strong>, nascido em Catalão-GO. Sou filho de professores, o que sempre me deu uma base forte sobre a importância de estudar.</p>
+            <p>Meu grande sonho sempre foi o <strong>Cinema</strong> e trabalhar como diretor. Encontrei na programação uma carreira sólida que pode viabilizar meus projetos artísticos. Acredito que a tecnologia e a arte andam juntas, e hoje busco unir a lógica do desenvolvimento com a criatividade audiovisual.</p>
+        </section>
+
+        <section id="formacao" class="section">
+            <h2>Formação</h2>
+            <ul>
+                <li><strong>Análise e Desenvolvimento de Sistemas</strong> - UNINTER (Em andamento)</li>
+                <li><strong>Lógica de Programação e Java</strong> - Foco em POO e Herança</li>
+                <li><strong>Direção Cinematográfica</strong> - Estudos independentes e workshops</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfólio</h2>
+            <div class="projeto-card">
+                <h3>Brasil em Cena</h3>
+                <p>Site interativo para catalogar e valorizar o cinema nacional.</p>
+                <a href="https://higorfelip.github.io/Brasil-em-Cena/" target="_blank">Acessar Projeto</a>
+            </div>
+            <div class="projeto-card">
+                <h3>Gerenciador de Cofrinho (Java)</h3>
+                <p>Sistema de console que usa Herança e Polimorfismo para converter moedas.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <form id="meuForm">
+                <input type="text" id="nome" placeholder="Seu Nome completo">
+                <input type="email" id="email" placeholder="Seu melhor e-mail">
+                <textarea id="mensagem" placeholder="Deixe sua mensagem aqui..."></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p id="mensagemStatus"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Higor Felipe Nascimento Souza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
